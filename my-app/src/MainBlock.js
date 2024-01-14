@@ -112,7 +112,7 @@ const MainBlock = () => {
             </Grid>
 
             <Grid item lg={5} sm={10} sx={{ textAlign: "left", margin: { sm: "1rem", xs: "1rem" }, mb: { xs: "2rem" } }}>
-                <h1 style={{ fontSize: "4rem", fontWeight: "500", color: "#9b8bad", marginBottom: "1rem" }}>Hi, my name is Olha</h1>
+                <h1 style={{ fontSize: "30pt", fontWeight: "500", color: "#9b8bad", marginBottom: "1rem" }}>Hi, my name is Olha</h1>
                 <Typography >
                     <span style={{ fontSize: "18pt", background: "#9b8bad", padding: "0.4rem 0.6rem", width: "auto", color: "white", borderRadius: "0.3rem" }} >I'm Software Developer and Designer</span>
                 </Typography>
