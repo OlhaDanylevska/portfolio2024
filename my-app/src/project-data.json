@@ -1,0 +1,70 @@
+[
+    {
+        "title": "VideoHub",
+        "description": "This app combines video hosting capabilities with a unique X-ray feature, creating an engaging and interactive platform for users to upload, manage, and explore videos in a novel way.",
+        "imageUrl": "https://i.pinimg.com/736x/05/37/29/053729179d5dcf45cf82a0ced68034d3.jpg",
+        "imageAlt": "image of the app",
+        "tags": [
+            "React.js",
+            "Material UI",
+            "AWS Lambda, APIGateway, IAM, S3"
+        ],
+        "links": [
+            {
+                "icon": "GitHubIcon",
+                "href": "https://github.com/OlhaDanylevska/thebigmouth"
+            },
+            {
+                "icon": "OpenInNewIcon",
+                "href": "https://www.hackyourfuture.co.uk/videohub"
+            }
+        ]
+    },
+    {
+        "title": "Full Stack Project 'Favorite Videos'",
+        "description": "Video Manager is your one-stop solution for organizing, rating, and sharing your favorite videos. It allows you to easily catalog, rate, and vote for your preferred videos. All your data is securely stored in an SQL database, ensuring its safety. The app is designed for user-friendliness and can be accessed from any device.",
+        "imageAlt": "Full Stack Project Image",
+        "imageUrl": "https://i.pinimg.com/564x/13/33/f5/1333f502ccd9abe33863eeb4ef476fcc.jpg",
+        "tags": [
+            "CSS",
+            "JavaScript",
+            "Figma",
+            "React.js",
+            "Express.js",
+            "Node.js",
+            "SQL"
+        ],
+        "links": [
+            {
+                "icon": "GitHubIcon",
+                "href": "https://github.com/OlhaDanylevska/Full-Stack-Project-Assessment"
+            },
+            {
+                "icon": "OpenInNewIcon",
+                "href": "https://youtube-videos-favorite-list.onrender.com/"
+            }
+        ]
+    },
+    {
+        "title": "Country Explorer",
+        "description": "Welcome to Country Explorer – your gateway to world knowledge. With my app, you can effortlessly explore countries, discover flags, borders, population, regions, and capitals. Dynamic search feature makes finding information quick and easy.",
+        "imageUrl": "https://i.pinimg.com/564x/19/90/e6/1990e6e051b308b35212940220f905ac.jpg",
+        "imageAlt": "Country Explorer Image",
+        "tags": [
+            "JavaScript",
+            "CSS",
+            "React.js",
+            "Express.js"
+        ],
+        "links": [
+            {
+                "icon": "GitHubIcon",
+                "href": "https://github.com/OlhaDanylevska/countries-react"
+            },
+            {
+                "icon": "OpenInNewIcon",
+                "href": "https://countries-flags-app.netlify.app/"
+            }
+        ]
+    }
+]

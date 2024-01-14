@@ -62,11 +62,12 @@ const Header = React.forwardRef((props, ref) => {
                         <ListItem key={index}>
                             <Link
                                 anchor="left"
-                                color="black"
+                                color="#3d3d3d"
                                 marginRight="1rem"
                                 variant="button"
                                 underline="none"
                                 href={item.href}
+                                sx={{ "&:hover": { color: "red" } }}
                             >
                                 {item.name}
                             </Link>
@@ -74,7 +75,7 @@ const Header = React.forwardRef((props, ref) => {
                     ))}
                 </List>
             </Drawer>
-        </AppBar>
+        </AppBar >
     );
 })
 

@@ -1,11 +1,13 @@
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import './App.css';
 import Header from './Header';
-import { Box, Grid } from "@mui/material"
+import { Box, Grid, Hidden } from "@mui/material"
 import MainBlock from './MainBlock';
 import AboutInfo from './AboutInfo';
 import { useState, useRef } from 'react';
 import UseAnimate from './Background';
+import Projects from './Projects';
+import Footer from './Footer';
 
 let theme = createTheme({
   palette: {
@@ -19,7 +21,7 @@ let theme = createTheme({
     textDecoration: "none",
     transition: "color 0.3s",
     "&:hover": {
-      color: "black",
+      color: "#3d3d3d",
     }
   },
   avatar: {
@@ -28,8 +30,8 @@ let theme = createTheme({
     backgroundImage: "url(https://lh3.googleusercontent.com/a/ACg8ocL2rGkq9HH60Q8yFnKLdlvWaTgklDQ7hVNiP2p3NpQGZVs=s576-c-no)",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    minHeight: "22rem",
-    minWidth: "22rem"
+    height: { md: "22rem", xs: "16rem" },
+    width: { md: "22rem", xs: "16rem" },
   },
 })
 
@@ -47,26 +49,32 @@ function App() {
     }}>
       <ThemeProvider theme={theme}>
         <Header ref={headerRef} />
-        <Grid container sx={{ position: "relative", height: "90vh", width: "100%" }}>
+        <Grid container lg={12} justifyContent="center" alignItems="center" sx={{ position: "relative", height: "90vh" }}>
           <MainBlock />
-          <Grid item sx={{ zIndex: 1, position: "relative" }}>
+          <Grid item sx={{ zIndex: 1, position: "relative" }} lg={12}>
             <Box sx={{ zIndex: 1 }}>
               <AboutInfo isInView={isInView} setIsInView={setIsInView} />
             </Box>
-            {isInView && (
-              <Box
-                sx={{
-                  position: "absolute",
-                  width: "100%",
-                  top: 0,
-                  left: 0,
-                  zIndex: -1
-                }}
-              >
-                <UseAnimate isInView={isInView} />
-              </Box>
-            )}
+            <Hidden mdDown>
+              {isInView && (
+                <Box
+                  sx={{
+                    position: "absolute",
+                    width: "100%",
+                    top: 0,
+                    left: 0,
+                    zIndex: -1
+                  }}
+                >
+                  <UseAnimate isInView={isInView} />
+                </Box>
+              )}
+            </Hidden>
           </Grid>
+          <Grid item justifySelf="center" >
+            <Projects />
+          </Grid>
+          <Footer />
         </Grid>
       </ThemeProvider>
     </div >

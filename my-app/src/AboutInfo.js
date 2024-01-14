@@ -1,19 +1,36 @@
-import { Grid, Container, Typography, Box, Divider } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import React, { useEffect, useRef } from "react";
-import UseAnimate from "./Background";
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import CssIcon from '@mui/icons-material/Css';
+import HtmlIcon from '@mui/icons-material/Html';
+import reactLogo from './react.svg';
+import logoSVGFigma from "./figma.svg";
+import express from "./express-js.svg"
+import node from "./node-js.svg"
+import sql from "./sql.svg"
+import mui from "./material-ui-1.svg"
+import aws from "./AWS.svg"
+import lambda from "./lambda.svg"
+import gateway from "./aws-api-gateway.svg"
+import s3 from "./s3.svg"
 
 const skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Figma",
-    "React.js",
-    "Express.js",
-    "Node.js",
-    "SQL",
-    "Material UI",
-    "AWS Lambda, APIGateway, IAM, S3",
+    <JavascriptIcon sx={{ fontSize: "3rem" }} />,
+    <CssIcon sx={{ fontSize: "3rem" }} />,
+    <HtmlIcon sx={{ fontSize: "3rem" }} />,
+    <img src={logoSVGFigma} style={{ height: "2.8rem" }} alt="logo-figma" />,
+    <img src={reactLogo} style={{ height: "3rem" }} alt="Logo-react" />,
+    <img src={express} style={{ height: "3rem" }} alt="Logo-express" />,
+    <img src={node} style={{ height: "3rem", }} alt="Logo-node" />,
+    <img src={sql} style={{ height: "3rem", }} alt="Logo-sql" />,
+    <img src={mui} style={{ height: "2rem", }} alt="Logo-mui" />,
+    <img src={aws} style={{ height: "3rem", }} alt="Logo-aws" />,
+    <img src={lambda} style={{ height: "2.5rem", }} alt="Logo-lambda" />,
+    <img src={gateway} style={{ height: "2.5rem", }} alt="Logo-gateway" />,
+    <img src={s3} style={{ height: "2rem", }} alt="Logo-s3" />,
+
 ];
+
 
 const AboutInfo = ({ isInView, setIsInView }) => {
     const aboutRef = useRef(null);
@@ -51,17 +68,17 @@ const AboutInfo = ({ isInView, setIsInView }) => {
     }, [isInView]);
 
     return (
-        <Box sx={{ height: "90vh", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
+        <Box sx={{ minHeight: "98vh", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
             <Grid
                 sx={{ marginTop: 2, height: "100%" }}
                 container
-                lg={10}
+                lg={12}
                 direction="row"
-                justifyContent="space-between"
+                justifyContent="center"
                 alignItems="center"
             >
 
-                <Grid item lg={9}>
+                <Grid item lg={8} md={8} sm={10} xs={11}>
                     <Typography
                         component="h2"
                         variant="h1"
@@ -74,15 +91,15 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                         Background<br />Summary
                     </Typography>
                     <Box mt={2} width="100%">
-                        <Typography sx={{ fontSize: "14pt", color: "#212121", textAlign: "left" }}>
+                        <Typography sx={{ fontSize: "14pt", color: "#3d3d3d", textAlign: "left" }}>
                             <p>
-                                In my previous role as a brand designer, my growing interest in web design led me to embark on an exciting journey of retraining. I successfully completed Code Your Future, an intensive ten-month boot camp, and graduated as a software developer in December 2023.
+                                As a former brand designer, my fascination with web design led me to embark on an exciting career change. I successfully completed a year long software development bootcamp at Code Your Future, graduating December 2023 as a software developer.
                             </p>
                             <p>
-                                I am ambitious and thrilled about my future as a software developer, where I can seamlessly blend my technical prowess with creative skills. The prospect of continuously learning and solving problems using logic is what excites me the most.
+                                I am thrilled to now blend my creative skills in design, drawing, and photography with my newfound technical prowess in coding. I deeply enjoy the logic and problem-solving involved in programming, as well as the never-ending opportunity to acquire new skills.
                             </p>
                             <p>
-                                Beyond coding, I'm deeply passionate about drawing, design, and photography. These pursuits allow me to express creativity and bring a unique perspective to my work.
+                                Most of all, I am motivated to leverage both my technical and creative backgrounds in a development role where I can build visually-appealing, user-friendly applications. After retraining as a coder, I’m eager to apply my ambition on impactful projects that allow me to continue acquiring new technical skills while also focusing my lifelong creative pursuits.
                             </p>
                             <p>
                                 <Typography
@@ -97,25 +114,13 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                                 >
                                     Skills
                                 </Typography>
-                                <Grid container>
+                                <Grid container alignItems="center">
                                     {skills.map((skill, index) => (
                                         <React.Fragment key={index}>
-                                            <Grid item mb="0.5rem" sx={{ color: "#212121" }}>
+                                            <Grid item sx={{ mr: "1.5rem" }}>
                                                 {skill}
                                             </Grid>
-                                            {index !== skills.length - 1 && (
-                                                <Grid item mb="0.5rem">
-                                                    <Divider
-                                                        orientation="vertical"
-                                                        sx={{
-                                                            borderWidth: "1px",
-                                                            borderColor: "#9b8bad",
-                                                            marginRight: "1rem",
-                                                            marginLeft: "1rem",
-                                                        }}
-                                                    />
-                                                </Grid>
-                                            )}
+
                                         </React.Fragment>
                                     ))}
                                 </Grid>
@@ -123,7 +128,6 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                         </Typography>
                     </Box>
                 </Grid>
-                <Grid item lg={2}></Grid>
 
             </Grid>
 
