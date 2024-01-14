@@ -1,17 +1,17 @@
 import { useAnimate } from "framer-motion";
 import { Box } from "@mui/material";
-import { useEffect } from "react"; // Correct import statement for `useRef`
+import { useEffect } from "react";
+import { useCallback } from 'react';
+
 
 const UseAnimate = ({ isInView }) => {
     return <Background isInView={isInView} />;
 };
 
-
 const Background = ({ isInView }) => {
     const [scope, animate] = useAnimate();
 
-    const animateLayer = async () => {
-        console.log("Animating layer");
+    const animateLayer = useCallback(async () => {
         if (scope.current === null) {
             console.error("Ref not available yet");
             return;
@@ -71,7 +71,8 @@ const Background = ({ isInView }) => {
         await Promise.all([animationMoveBack1, animationMoveBack2, animationMoveBack3, animationMoveBack4, animationMoveBack5, animationMoveBack6]);
 
         animateLayer()
-    }
+    }, [animate, scope])
+
 
     useEffect(() => {
         console.log("Entering useEffect");
@@ -82,7 +83,7 @@ const Background = ({ isInView }) => {
         }
 
         console.log("Exiting useEffect");
-    }, [isInView, scope.current]);
+    }, [isInView, animateLayer, scope]);
 
 
     return (

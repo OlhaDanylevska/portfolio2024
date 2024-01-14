@@ -65,7 +65,7 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                 observer.unobserve(currentElement);
             }
         };
-    }, [isInView]);
+    }, [isInView, setIsInView]);
 
     return (
         <Box sx={{ minHeight: "98vh", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
@@ -81,12 +81,14 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                 <Grid item lg={8} md={8} sm={10} xs={11}>
                     <Typography
                         component="h2"
-
+                        lg={3}
                         sx={{
-                            fontSize: { lg: "60pt", sm: "40pt", xs: "40pt" },
+                            fontSize: { lg: "70pt", sm: "40pt", xs: "40pt" },
                             textAlign: "left",
                             color: "#9b8bad",
-                            fontWeight: "600",
+                            fontWeight: "400",
+                            lineHeight: "1.2",
+
                         }}
                     >
                         Background<br />Summary
