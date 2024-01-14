@@ -1,4 +1,3 @@
-import { useTheme } from "@emotion/react"
 import { Grid, Avatar, Box, Typography, Divider, Hidden } from "@mui/material"
 import Social from "./Social";
 import { useState } from "react"
@@ -6,7 +5,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 const MainBlock = () => {
-    const theme = useTheme()
     const [hover, setHover] = useState(false);
     const handleMouseOver = () => {
         setHover(true)
@@ -89,7 +87,15 @@ const MainBlock = () => {
                         transition: "all 0.5s ease-in-out",
 
                     }} />
-                    <Avatar sx={theme.avatar}  >{""}</Avatar>
+                    <Avatar sx={{
+                        borderRadius: 50,
+                        position: "absolute",
+                        backgroundImage: "url(https://lh3.googleusercontent.com/a/ACg8ocL2rGkq9HH60Q8yFnKLdlvWaTgklDQ7hVNiP2p3NpQGZVs=s576-c-no)",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        height: { md: "22rem", xs: "16rem" },
+                        width: { md: "22rem", xs: "16rem" },
+                    }} >{""}</Avatar>
                     <Box sx={{
                         minHeight: hover ? "6rem" : "10rem",
                         minWidth: hover ? "6rem" : "10rem",

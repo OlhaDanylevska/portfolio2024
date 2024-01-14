@@ -81,11 +81,12 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                 <Grid item lg={8} md={8} sm={10} xs={11}>
                     <Typography
                         component="h2"
-                        variant="h1"
+
                         sx={{
+                            fontSize: { lg: "60pt", sm: "40pt", xs: "40pt" },
                             textAlign: "left",
                             color: "#9b8bad",
-                            fontWeight: "400",
+                            fontWeight: "600",
                         }}
                     >
                         Background<br />Summary

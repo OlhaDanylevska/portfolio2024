@@ -1,7 +1,6 @@
 import { AppBar, Container, Toolbar, Hidden, IconButton, Divider, ListItem, Drawer, List, Link } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useTheme } from "@emotion/react";
 import { useState } from "react";
 import React from "react";
 
@@ -15,7 +14,6 @@ const navigationLinks = [
 
 
 const Header = React.forwardRef((props, ref) => {
-    const theme = useTheme();
     const [open, setOpen] = useState(false);
 
     return (
@@ -33,7 +31,16 @@ const Header = React.forwardRef((props, ref) => {
                             <Link
                                 key={index}
                                 anchor="right"
-                                sx={theme.link}
+                                sx={{
+                                    marginRight: "20px",
+                                    fontWeight: "600",
+                                    color: "white",
+                                    textDecoration: "none",
+                                    transition: "color 0.3s",
+                                    "&:hover": {
+                                        color: "#3d3d3d",
+                                    }
+                                }}
                                 underline="none"
                                 variant="button"
                                 href={item.href}
