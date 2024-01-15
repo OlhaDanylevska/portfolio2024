@@ -68,7 +68,7 @@ const AboutInfo = ({ isInView, setIsInView }) => {
     }, [isInView, setIsInView]);
 
     return (
-        <Box sx={{ minHeight: "98vh", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
+        <Box sx={{ minHeight: "90vh", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
             <Grid
                 sx={{ marginTop: 2, height: "100%" }}
                 container
