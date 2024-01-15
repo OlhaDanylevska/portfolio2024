@@ -83,11 +83,11 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                         component="h2"
                         lg={3}
                         sx={{
-                            fontSize: { lg: "70pt", sm: "40pt", xs: "40pt" },
+                            fontSize: { lg: "50pt", sm: "30pt", xs: "40pt" },
                             textAlign: "left",
                             color: "#9b8bad",
                             fontWeight: "400",
-                            lineHeight: "1.2",
+                            lineHeight: "1.0",
 
                         }}
                     >
