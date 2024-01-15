@@ -33,7 +33,12 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
 
                     </CardContent>
                     <CardActions >
-                        <Grid container justifyContent="space-between" alignItems="flex-start" >
+                        <Grid container justifyContent="space-between" direction="row-reverse" alignItems="flex-start" >
+                            <Grid item sx={{ ml: "1rem" }}>
+                                <Hidden smDown>
+                                    <TagsComponent tags={tags} />
+                                </Hidden>
+                            </Grid>
                             <Grid item sx={{ ml: "1rem" }}>
                                 {links.map((link) => (
                                     link.icon === "GitHubIcon" ?
@@ -49,11 +54,6 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
                                             </IconButton>
                                         </Link>
                                 ))}
-                            </Grid>
-                            <Grid item>
-                                <Hidden smDown>
-                                    <TagsComponent tags={tags} />
-                                </Hidden>
                             </Grid>
                         </Grid>
                     </CardActions>
@@ -74,7 +74,7 @@ const Projects = () => {
     return (
         <Grid container id="projects" lg={12} sm={12} xs={12} justifyContent="center" alignItems='center' mb="6rem">
             <Grid item lg={8} sm={11} xs={11} pt={8} sx={{ mb: { xs: "1rem" } }} >
-                <Typography variant="h3" sx={{ color: "#9b8bad", fontWeight: "600", textAlign: "left" }}>
+                <Typography variant="h3" sx={{ color: "#9b8bad", fontWeight: "400", textAlign: "left" }}>
                     Projects
                 </Typography>
             </Grid>
