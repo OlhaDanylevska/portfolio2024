@@ -31,6 +31,7 @@ const Header = React.forwardRef((props, ref) => {
                             <Link
                                 key={index}
                                 anchor="right"
+                                target={item.name === "Resume" ? "_blank" : "_self"}
                                 sx={{
                                     marginRight: "20px",
                                     fontWeight: "600",
@@ -67,7 +68,9 @@ const Header = React.forwardRef((props, ref) => {
                 <List>
                     {navigationLinks.map((item, index) => (
                         <ListItem key={index}>
+
                             <Link
+                                target={item.name === "Resume" ? "_blank" : "_self"}
                                 anchor="left"
                                 color="#3d3d3d"
                                 marginRight="1rem"
@@ -78,6 +81,7 @@ const Header = React.forwardRef((props, ref) => {
                             >
                                 {item.name}
                             </Link>
+
                         </ListItem>
                     ))}
                 </List>
