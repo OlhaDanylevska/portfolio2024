@@ -125,7 +125,7 @@ const MainBlock = () => {
 
                     <Divider orientation="vertical" flexItem sx={{ borderWidth: "2px", borderColor: "#9b8bad", marginRight: "1rem" }} />
 
-                    <Box width="80%" sx={{ color: "#3d3d3d" }}>I am software developer interested in opportunity. I specialize in JavaScript (React), HTML, CSS, and Node.js. Proficient in Material-UI for creating responsive user interfaces. Experienced with AWS services like Lambda, IAM, API Gateway, and S3.
+                    <Box width="80%" sx={{ color: "#3d3d3d" }}>I am software developer interested in opportunity. I specialise in JavaScript (React), HTML, CSS, and Node.js. Proficient in Material-UI for creating responsive user interfaces. Experienced with AWS services like Lambda, IAM, API Gateway, and S3.
                     </Box>
 
 
