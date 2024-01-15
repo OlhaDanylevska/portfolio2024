@@ -87,7 +87,7 @@ const Background = ({ isInView }) => {
 
 
     return (
-        <div style={{ width: "100%", height: "90vh", opasity: 0 }} ref={scope}>
+        <div style={{ maxWidth: "80%", height: "90vh", opasity: 0 }} ref={scope}>
             <Box
                 id="obj1"
                 sx={{
