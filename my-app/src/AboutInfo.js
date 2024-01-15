@@ -94,7 +94,7 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                         Background<br />Summary
                     </Typography>
                     <Box mt={2} width="100%">
-                        <Typography sx={{ fontSize: "14pt", color: "#3d3d3d", textAlign: "left" }}>
+                        <Typography sx={{ fontSize: "12pt", color: "#3d3d3d", textAlign: "left" }}>
                             <p>
                                 As a former brand designer, my fascination with web design led me to embark on an exciting career change. I successfully completed a year long software development bootcamp at Code Your Future, graduating December 2023 as a software developer.
                             </p>

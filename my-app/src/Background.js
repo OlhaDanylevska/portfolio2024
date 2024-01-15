@@ -87,7 +87,7 @@ const Background = ({ isInView }) => {
 
 
     return (
-        <div style={{ maxWidth: "80%", height: "90vh", opasity: 0 }} ref={scope}>
+        <div style={{ maxWidth: "100%", height: "90vh", opasity: 0 }} ref={scope}>
             <Box
                 id="obj1"
                 sx={{
@@ -96,8 +96,8 @@ const Background = ({ isInView }) => {
                     position: "absolute",
                     borderRadius: "6rem",
                     opacity: 0,
-                    mt: "10rem",
-                    ml: "50rem",
+                    mt: "10%",
+                    ml: "20%",
                     backgroundImage: "linear-gradient(to bottom left, rgba(151, 149, 240, 0.7), rgba(251, 200, 212, 1))",
                 }}
             />
@@ -109,8 +109,8 @@ const Background = ({ isInView }) => {
                     position: "absolute",
                     borderRadius: "6rem",
                     opacity: 0,
-                    mt: "12rem",
-                    ml: "78rem",
+                    mt: "10%",
+                    ml: "70%",
                     backgroundImage: "linear-gradient(to bottom left, rgba(151, 149, 240, 0.7), rgba(251, 200, 212, 1))",
                 }}
             />
@@ -122,8 +122,8 @@ const Background = ({ isInView }) => {
                     position: "absolute",
                     borderRadius: "3rem",
                     opacity: 0,
-                    mt: "5rem",
-                    ml: "5rem",
+                    mt: "10%",
+                    ml: "50%",
                     backgroundImage: "linear-gradient(to bottom left, rgba(151, 149, 240, 0.7), rgba(251, 200, 212, 1))",
                 }}
             />
@@ -135,8 +135,8 @@ const Background = ({ isInView }) => {
                     position: "absolute",
                     borderRadius: "4rem",
                     opacity: 0,
-                    mt: "30rem",
-                    ml: "10rem",
+                    mt: "30%",
+                    ml: "20%",
                     backgroundImage: "linear-gradient(to bottom left, rgba(151, 149, 240, 0.7), rgba(251, 200, 212, 1))",
                 }}
             />
@@ -148,8 +148,8 @@ const Background = ({ isInView }) => {
                     position: "absolute",
                     borderRadius: "4rem",
                     opacity: 0,
-                    mt: "40rem",
-                    ml: "28rem",
+                    mt: "30%",
+                    ml: "43%",
                     backgroundImage: "linear-gradient(to bottom left, rgba(151, 149, 240, 0.7), rgba(251, 200, 212, 1))",
                 }}
             />
@@ -161,8 +161,8 @@ const Background = ({ isInView }) => {
                     borderRadius: "10rem",
                     position: "absolute",
                     opacity: 0,
-                    mt: "25rem",
-                    ml: "73rem",
+                    mt: "30%",
+                    ml: "80%",
                     backgroundImage: "linear-gradient(to bottom left, rgba(151, 149, 240, 0.7), rgba(251, 200, 212, 1))",
                 }}
             />
