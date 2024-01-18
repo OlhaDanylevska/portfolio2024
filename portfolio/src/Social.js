@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const socianItems = [
     { icon: GitHubIcon, url: "https://github.com/OlhaDanylevska" },
-    { icon: LinkedInIcon, url: "https://www.linkedin.com/jobs/?src=go-pa&trk=sem-ga_campid.20352247597_asid.152657623844_crid.664928667243_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.9045961&mcid=7083157643439083520&cid=&gclid=Cj0KCQjwpc-oBhCGARIsAH6ote-8XuNA1cMXRBZ5vvJlcVOWdcg0mstKodyyd9JrpeggScMNBm3t8jYaAgauEALw_wcB&gclsrc=aw.ds" },
+    { icon: LinkedInIcon, url: "https://www.linkedin.com/in/olha-danylevska-117810a5/" },
     { icon: "Behance", url: "https://www.behance.net/OlhaDanilevskaya" }
 ]
 const Social = ({ direction }) => {

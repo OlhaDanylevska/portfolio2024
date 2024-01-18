@@ -68,9 +68,11 @@ const AboutInfo = ({ isInView, setIsInView }) => {
     }, [isInView, setIsInView]);
 
     return (
-        <Box sx={{ minHeight: "90vh", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
+        <Box sx={{ height: "100vh", maxHeight: "100%", display: "flex", justifyContent: "center" }} id="about" ref={aboutRef} >
             <Grid
-                sx={{ marginTop: 2, height: "100%" }}
+                sx={{
+                    height: "100%",
+                }}
                 container
                 lg={12}
                 direction="row"
@@ -94,7 +96,7 @@ const AboutInfo = ({ isInView, setIsInView }) => {
                         Background<br />Summary
                     </Typography>
                     <Box mt={2} width="100%">
-                        <Typography sx={{ fontSize: "12pt", color: "#3d3d3d", textAlign: "left" }}>
+                        <Typography sx={{ fontSize: { lg: "14pt", xs: "11pt" }, color: "#3d3d3d", textAlign: "left" }}>
                             <p>
                                 As a former brand designer, my fascination with web design led me to embark on an exciting career change. I successfully completed a year long software development bootcamp at Code Your Future, graduating December 2023 as a software developer.
                             </p>

@@ -14,7 +14,7 @@ const MainBlock = () => {
     }
     return (
 
-        <Grid container justifyContent="center" alignItems="center" sx={{ width: "100%", minHeight: "98vh", position: "relative", mt: { lg: 0, md: 0, sm: "3rem", xs: "3rem" } }} id="main">
+        <Grid container justifyContent="center" alignItems="center" sx={{ width: "100%", minHeight: "100vh", position: "relative", mt: { lg: 0, md: 0, sm: "3rem", xs: "3rem" } }} id="main">
 
             <Grid item lg={4} sm={12} >
                 <Grid container justifyContent="center" alignItems="center"
@@ -113,8 +113,8 @@ const MainBlock = () => {
 
             <Grid item lg={5} sm={10} sx={{ textAlign: "left", margin: { sm: "1rem", xs: "1rem" }, mb: { xs: "2rem" } }}>
                 <h1 style={{ fontSize: "30pt", fontWeight: "500", color: "#9b8bad", marginBottom: "1rem" }}>Hi, my name is Olha</h1>
-                <Typography >
-                    <span style={{ fontSize: "18pt", background: "#9b8bad", padding: "0.4rem 0.6rem", width: "auto", color: "white", borderRadius: "0.3rem" }} >I'm Software Developer and Designer</span>
+                <Typography sx={{ fontSize: { lg: "20pt", md: "20pt", xs: "14pt" }, background: "#9b8bad", padding: "0.4rem 0.6rem", width: "auto", color: "white", borderRadius: "0.3rem" }}>
+                    <span>I'm a software Developer and Designer</span>
                 </Typography>
 
                 <Box sx={{ display: "flex", mt: "1rem", flexDirection: "row", alignItems: "center", color: "#77648c" }}>
@@ -125,7 +125,9 @@ const MainBlock = () => {
 
                     <Divider orientation="vertical" flexItem sx={{ borderWidth: "2px", borderColor: "#9b8bad", marginRight: "1rem" }} />
 
-                    <Box width="80%" sx={{ color: "#3d3d3d" }}>I am software developer interested in opportunity. I specialise in JavaScript (React), HTML, CSS, and Node.js. Proficient in Material-UI for creating responsive user interfaces. Experienced with AWS services like Lambda, IAM, API Gateway, and S3.
+                    <Box sx={{ color: "#3d3d3d", width: { lg: "80%", xs: "100%" } }}>I'm a software developer interested in job opportunities.<br />
+                        <span style={{ fontWeight: 600, color: "#77648c" }}>I specialise in:</span><br />
+                        JavaScript (React), HTML, CSS, and Node.js. Proficient in Material-UI for creating responsive user interfaces. Experienced with AWS services like Lambda, IAM, API Gateway, and S3.
                     </Box>
 
 
