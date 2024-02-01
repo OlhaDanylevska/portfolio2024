@@ -37,11 +37,11 @@
         "links": [
             {
                 "icon": "GitHubIcon",
-                "href": "https://github.com/OlhaDanylevska/Full-Stack-Project-Assessment"
+                "href": "https://github.com/OlhaDanylevska/Full-Stack-Mirror"
             },
             {
                 "icon": "OpenInNewIcon",
-                "href": "https://static-full-stack.onrender.com/"
+                "href": "https://video-recomendations-static.onrender.com/"
             }
         ]
     },

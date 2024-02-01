@@ -3,16 +3,16 @@ import React, { useEffect, useRef } from "react";
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import CssIcon from '@mui/icons-material/Css';
 import HtmlIcon from '@mui/icons-material/Html';
-import reactLogo from './react.svg';
-import logoSVGFigma from "./figma.svg";
-import express from "./express-js.svg"
-import node from "./node-js.svg"
-import sql from "./sql.svg"
-import mui from "./material-ui-1.svg"
-import aws from "./AWS.svg"
-import lambda from "./lambda.svg"
-import gateway from "./aws-api-gateway.svg"
-import s3 from "./s3.svg"
+import reactLogo from './assets/react.svg';
+import logoSVGFigma from "./assets/figma.svg";
+import express from "./assets/express-js.svg"
+import node from "./assets/node-js.svg"
+import sql from "./assets/sql.svg"
+import mui from "./assets/material-ui-1.svg"
+import aws from "./assets/AWS.svg"
+import lambda from "./assets/lambda.svg"
+import gateway from "./assets/aws-api-gateway.svg"
+import s3 from "./assets/s3.svg"
 
 const skills = [
     <JavascriptIcon sx={{ fontSize: "3rem" }} />,

@@ -9,7 +9,7 @@ const navigationLinks = [
     { name: "Main", href: "#main" },
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
-    { name: "Resume", href: "https://drive.google.com/file/d/1Hcq77pYp87EPTw8ULQw-oDdrVuksxYxZ/view?usp=sharing" }
+    { name: "Resume", href: "https://drive.google.com/file/d/1x4RWmDqvXhGCXqPzf9jaA0xl6UzoCEb-/view?usp=sharing" }
 ];
 
 
