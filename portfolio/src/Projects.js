@@ -39,22 +39,22 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
                             <Hidden smDown>
                                 <Carousel>
                                     <div>
-                                        <img src={screen1} alt="Image 1" />
+                                        <img src={screen1} alt="Screenshot of X-Ray" />
                                     </div>
                                     <div>
-                                        <img src={screen2} alt="Image 2" />
+                                        <img src={screen2} alt="Screenshot of X-Ray" />
                                     </div>
                                     <div>
-                                        <img src={screen3} alt="Image 3" />
+                                        <img src={screen3} alt="Dashboard for user" />
                                     </div>
                                     <div>
-                                        <img src={screen4} alt="Image 4" />
+                                        <img src={screen4} alt="Dashboard blocked" />
                                     </div>
                                     <div>
-                                        <img src={screen5} alt="Image 5" />
+                                        <img src={screen5} alt="videoHub main page" />
                                     </div>
                                     <div>
-                                        <img src={screen6} alt="Image 6" />
+                                        <img src={screen6} alt="main bunner" />
                                     </div>
                                 </Carousel>
                             </Hidden>
