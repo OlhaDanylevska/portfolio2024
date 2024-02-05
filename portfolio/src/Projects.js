@@ -2,6 +2,14 @@ import data from "./project-data.json"
 import { Grid, Typography, Card, CardMedia, CardContent, CardActions, IconButton, Chip, Hidden, Link } from "@mui/material"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import screen1 from "./assets/sc1.png"
+import screen2 from "./assets/sc2.png"
+import screen3 from "./assets/sc3.png"
+import screen4 from "./assets/sc4.png"
+import screen5 from "./assets/sc5.png"
+import screen6 from "./assets/sc6.png"
 
 const TagsComponent = ({ tags }) => {
     return (
@@ -27,12 +35,37 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
 
                         <Typography variant="h4" paragraph>{title}</Typography>
                         <Typography variant="subtitle1" paragraph>{description}</Typography>
+                        {title === "VideoHub" &&
+                            <Hidden smDown>
+                                <Carousel>
+                                    <div>
+                                        <img src={screen1} alt="Image 1" />
+                                    </div>
+                                    <div>
+                                        <img src={screen2} alt="Image 2" />
+                                    </div>
+                                    <div>
+                                        <img src={screen3} alt="Image 3" />
+                                    </div>
+                                    <div>
+                                        <img src={screen4} alt="Image 4" />
+                                    </div>
+                                    <div>
+                                        <img src={screen5} alt="Image 5" />
+                                    </div>
+                                    <div>
+                                        <img src={screen6} alt="Image 6" />
+                                    </div>
+                                </Carousel>
+                            </Hidden>
+                        }
                         <Hidden smUp>
                             <TagsComponent tags={tags} />
                         </Hidden>
 
                     </CardContent>
                     <CardActions >
+
                         <Grid container justifyContent="space-between" direction="row-reverse" alignItems="flex-start" >
                             <Grid item sx={{ ml: "1rem" }}>
                                 <Hidden smDown>
