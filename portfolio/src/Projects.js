@@ -24,7 +24,7 @@ const TagsComponent = ({ tags }) => {
 
 const Project = ({ title, links, description, imageUrl, tags }) => {
     return (
-        <Grid item lg={8} sm={11} xs={11} sx={{ mb: "2rem", pt: "4rem" }}>
+        <Grid item lg={8} sm={11} xs={11} sx={{ mb: "2rem" }}>
             <Card sx={{
                 display: "flex",
                 textAlign: "left",
@@ -105,7 +105,7 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
 const Projects = () => {
     const allProjects = data
     return (
-        <Grid container id="projects" lg={12} sm={12} xs={12} justifyContent="center" alignItems='center' mb="6rem">
+        <Grid container id="projects" lg={12} sm={12} xs={12} justifyContent="center" alignItems='center' mb="6rem" mt="3rem">
             <Grid item lg={8} sm={11} xs={11} pt={8} sx={{ mb: { xs: "1rem" } }} >
                 <Typography variant="h3" sx={{ color: "#9b8bad", fontWeight: "400", textAlign: "left" }}>
                     Projects
