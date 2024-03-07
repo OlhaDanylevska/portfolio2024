@@ -24,7 +24,7 @@ const TagsComponent = ({ tags }) => {
 
 const Project = ({ title, links, description, imageUrl, tags }) => {
     return (
-        <Grid item lg={8} sm={11} xs={11} sx={{ mb: "2rem", mt: "2rem" }}>
+        <Grid item lg={8} sm={11} xs={11} sx={{ mb: "2rem", pt: "4rem" }}>
             <Card sx={{
                 display: "flex",
                 textAlign: "left",
