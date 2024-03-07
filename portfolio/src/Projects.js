@@ -24,7 +24,7 @@ const TagsComponent = ({ tags }) => {
 
 const Project = ({ title, links, description, imageUrl, tags }) => {
     return (
-        <Grid item lg={8} sm={11} xs={11} sx={{ mb: "2rem" }}>
+        <Grid item lg={8} sm={11} xs={11} sx={{ mb: "2rem", mt: "2rem" }}>
             <Card sx={{
                 display: "flex",
                 textAlign: "left",
@@ -37,7 +37,7 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
                         <Typography variant="subtitle1" paragraph>{description}</Typography>
                         {title === "VideoHub" &&
                             <Hidden smDown>
-                                <Carousel>
+                                <Carousel >
                                     <div>
                                         <img src={screen1} alt="Screenshot of X-Ray" />
                                     </div>

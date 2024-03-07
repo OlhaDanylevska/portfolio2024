@@ -82,11 +82,11 @@
         "links": [
             {
                 "icon": "GitHubIcon",
-                "href": "https://github.com/OlhaDanylevska/animal_volunteers"
+                "href": "https://github.com/AndriusIsin/animal_volunteers"
             },
             {
                 "icon": "OpenInNewIcon",
-                "href": "https://become-volunteer.onrender.com"
+                "href": "https://animal-farm-volunteers.onrender.com/"
             }
         ]
     }
