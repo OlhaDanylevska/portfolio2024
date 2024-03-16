@@ -28,7 +28,8 @@ const Project = ({ title, links, description, imageUrl, tags }) => {
             <Card sx={{
                 display: "flex",
                 textAlign: "left",
-                backgroundColor: "rgba(155, 139, 173, 0.6)"
+                color: "#2E2D2D",
+                backgroundColor: "rgba(232, 220, 227, 0.2)"
             }}>
                 <div>
                     <CardContent sx={{ margin: { lg: "1rem", sm: '0.5rem', xs: '0.5rem' } }}>

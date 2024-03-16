@@ -13,6 +13,10 @@ import aws from "./assets/AWS.svg"
 import lambda from "./assets/lambda.svg"
 import gateway from "./assets/aws-api-gateway.svg"
 import s3 from "./assets/s3.svg"
+import EC2 from "./assets/amazon_ec2_logo.png"
+import RDS from "./assets/RDS.png"
+import docker from "./assets/Docker-Logo.png"
+import terraform from "./assets/terraform.png"
 
 const skills = [
     <JavascriptIcon sx={{ fontSize: "3rem" }} />,
@@ -28,7 +32,10 @@ const skills = [
     <img src={lambda} style={{ height: "2.5rem", }} alt="Logo-lambda" />,
     <img src={gateway} style={{ height: "2.5rem", }} alt="Logo-gateway" />,
     <img src={s3} style={{ height: "2rem", }} alt="Logo-s3" />,
-
+    <img src={EC2} style={{ height: "3rem", }} alt="Logo-ec2" />,
+    <img src={RDS} style={{ height: "2.4rem", }} alt="Logo-rds" />,
+    <img src={docker} style={{ height: "3rem", }} alt="Logo-docker" />,
+    <img src={terraform} style={{ height: "2rem", }} alt="Logo-terrarorm" />,
 ];
 
 
